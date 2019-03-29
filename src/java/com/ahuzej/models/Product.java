@@ -12,6 +12,7 @@ package com.ahuzej.models;
 public class Product {
     private static int counter=1;
     private int id;
+	private int quantity;
 
     public int getId() {
         return id;
@@ -22,6 +23,14 @@ public class Product {
     public String getName() {
         return name;
     }
+	
+	public int getQuantity(){
+		return quantity;
+	}
+	
+	public void setQuantity(int quantity){
+		this.quantity = quantity;
+	}
 
     public void setName(String name) {
         this.name = name;
